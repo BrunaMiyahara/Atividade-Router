@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <h1>8 Cachorros "mais feios do mundo"</h1>
-      <ol reversed>
+      <ol reversed className="cachorros">
         <li><figure><figcaption>Freddie Mercury</figcaption><img src={img8} alt="Oitavo Cachorro"/></figure></li>
         <li><figure><figcaption>Tiny Twiggy</figcaption><img src={img7} alt="Sétimo Cachorro"/></figure></li>
         <li><figure><figcaption>Ozzy</figcaption><img src={img6} alt="Sexto Cachorro"/></figure></li>

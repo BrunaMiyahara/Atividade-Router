@@ -1,30 +1,68 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #171a46;
-  text-decoration: inherit;
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   display: flex;
+  width: 100vw;
   justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: #213547;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.562) ;
+  height: 50px;
+  width: 100vw;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+}
+
+.cachorros li {
+  background-color: black;
+  width: 70vw;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+img {
+  margin: 30px;
+}
+
+figcaption {
+  font-size: 30px;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #747bff;
 }
 
 h1 {
@@ -32,15 +70,49 @@ h1 {
   line-height: 1.1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+section {
+  display: flex;
+  height: 70vh;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+ section div {
+  height: 50%;
+  width: 40%;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+section div a {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 800;
+  white-space: wrap;
+  text-shadow: black 3px 2px;
+}
+
+.um {
+  background-image: url(https://amoraospets.com/wp-content/uploads/2019/10/peanut.jpg);
+}
+
+.dois {
+  background-image: url(https://ichef.bbci.co.uk/news/1024/branded_portuguese/eb8c/live/0f7e2320-15b6-11ee-8cae-4785e93eadf1.png);
+}
+
+.tres {
+  background-image: url(https://blog.cobasi.com.br/wp-content/uploads/2023/06/elwood-cachorro-feio-1.webp);
+}
+
+.quatro {
+  background-image: url(https://s2-vidadebicho.glbimg.com/sc7H7rK5EuBXiZsIbbnWYdqc7Wo=/640x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_fb623579cd474803aedbbbbae014af68/internal_photos/bs/2022/b/y/YR4o7VSDCwsYeBjlnRYg/2022-06-27-2007os-vencedores-da-competicao-de-cachorro-mais-feio-do-mundo.jpeg) ;
 }
