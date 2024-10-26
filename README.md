@@ -1,1 +1,3 @@
-# Atividade-Router
+Instalados pacotes necessários usando os comandos "npm i -D react-router-dom" e "npm install". Em seguida, organização da estrutura, criando os componentes "App", "Layout", "Home", "Blogs", "Contact" e "NoPage". O componente "App" configura as rotas usando "BrowserRouter" e "Routes", enquanto o "Layout" define a barra de navegação e utiliza o componente "Outlet" para renderizar as rotas filhas. O componente "Home" exibe uma lista de cachorros, "Blogs" apresenta links para artigos relacionados e "Contact" oferece um email para contato.
+Dentro do "Routes": rota principal (/) que renderiza o Layout, rotas adicionais para Home, Blogs, Contact, uma rota curinga (*) que exibe o componente NoPage para tratar URLs não definidas.
+Componente Layout: um contêiner para a navegação, que contém links para as diferentes seções do aplicativo, utiliza o componente Link do react-router-dom e o Outlet para renderizar o conteúdo correspondente à rota selecionada.
