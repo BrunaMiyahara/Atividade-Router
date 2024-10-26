@@ -1,0 +1,69 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+  
+body {
+  background-color: rgb(20, 30, 40);
+  color: linen;
+  font-family: 'Arial', sans-serif;
+}
+  
+.blogs-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+  gap: 30px; 
+  padding: 2rem;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+  
+.um, .dois, .tres, .quatro {
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  height: 250px; 
+}
+  
+.um {
+  background-image: url(https://i.natgeofe.com/n/56781ecf-e31b-4528-b412-6d67509aae4e/55739.jpg);
+}
+  
+.dois {
+  background-image: url(https://ichef.bbci.co.uk/news/1024/branded_portuguese/eb8c/live/0f7e2320-15b6-11ee-8cae-4785e93eadf1.png);
+}
+  
+.tres {
+  background-image: url(https://blog.cobasi.com.br/wp-content/uploads/2023/06/elwood-cachorro-feio-1.webp);
+}
+  
+.quatro {
+  background-image: url(https://i2-prod.dailyrecord.co.uk/incoming/article12246508.ece/ALTERNATES/s1200d/Screen-Shot-2018-03-24-at-170730.png);
+}
+  
+.um a, .dois a, .tres a, .quatro a {
+  text-decoration: none; 
+  color: white; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+  
+.um a:hover, .dois a:hover, .tres a:hover, .quatro a:hover {
+  background: rgba(255, 255, 255, 0.8); 
+  color: rgb(20, 30, 40); 
+}
+
+.um:hover, .dois:hover, .tres:hover, .quatro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); 
+}
+  
